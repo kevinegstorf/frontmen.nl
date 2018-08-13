@@ -22,23 +22,43 @@
 
 </head>
 <body>
-<header role="banner">
-    <h1>Contact</h1>
+<div class="o-layout o-layout--open">
+    <header role="banner" class="c-page-header o-layout__header">
+    <button class="c-btn c-btn--icon" id="menu-button">
+        <span class="c-ico c-ico--40 c-ico--menu"></span>
+        <span class="u-hidden-visually">Menu</span>
+    </button>
+    <h1 class="c-page-header__title">Contact</h1>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="https://frontmen.github.io/frontmen.nl/">Home</a></li>
-        <li><a href="https://frontmen.github.io/frontmen.nl/work">Work</a></li>
-        <li><a href="https://frontmen.github.io/frontmen.nl/about">About us</a></li>
-        <li><a href="https://frontmen.github.io/frontmen.nl/knowledge">Knowledge</a></li>
-        <li><a href="https://frontmen.github.io/frontmen.nl/contact">Contact</a></li>
+    <nav class="c-page-navigation o-layout__navigation">
+    <button class="c-btn c-btn--icon" data-toggle-menu>
+        <span class="c-ico c-ico--30 c-ico--close"></span>
+        <span class="u-hidden-visually">Close menu</span>
+    </button>
+
+    <ul class="o-list-bare c-page-navigation__list">
+        <li class="o-list-bare__item">
+            <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/">Home</a>
+        </li>
+        <li class="o-list-bare__item">
+            <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/work">Work</a>
+        </li>
+        <li class="o-list-bare__item">
+            <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/about">About us</a>
+        </li>
+        <li class="o-list-bare__item">
+            <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/knowledge">Knowledge</a>
+        </li>
+        <li class="o-list-bare__item">
+            <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/contact">Contact</a>
+        </li>
     </ul>
 </nav>
 
 
-<main role="main">
-    <h1>Contact</h1>
+    <main class="o-layout__main c-page-main" role="main">
+        <h1>Contact</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
@@ -46,13 +66,16 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
 
-</main>
+    </main>
 
-<footer role="contentinfo">
-    frontmen.nl
+    <footer role="contentinfo" class="c-page-footer o-layout__footer">
+    <a href="https://frontmen.github.io/frontmen.nl" class="c-page-footer__logo">
+        <img src="http://placehold.it/75x75" alt="Frontmen">
+    </a>
 </footer>
 
 <script src="https://frontmen.github.io/frontmen.nl/js/index.js"></script>
 
+</div>
 </body>
 </html>
