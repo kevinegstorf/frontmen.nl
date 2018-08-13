@@ -725,9 +725,9 @@ a {
     width: 44px;
     height: 44px; }
   .c-ico--menu {
-    background-image: url("/img/icon-menu.svg"); }
+    background-image: url("https://frontmen.github.io/frontmen.nl/img/icon-menu.svg"); }
   .c-ico--close {
-    background-image: url("/img/icon-close.svg"); }
+    background-image: url("https://frontmen.github.io/frontmen.nl/img/icon-close.svg"); }
 
 .c-page-header {
   background-color: #1f1e32;
