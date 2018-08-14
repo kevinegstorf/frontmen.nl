@@ -18,47 +18,64 @@
 
 <link rel="canonical" href="https://frontmen.github.io/frontmen.nl/work/klm">
 
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 <link rel="stylesheet" href="https://frontmen.github.io/frontmen.nl/css/main.css">
 
 </head>
 <body>
 <div class="o-layout">
     <header role="banner" class="c-page-header o-layout__header">
-    <button class="c-btn c-btn--icon" id="menu-button">
-        <span class="c-ico c-ico--40 c-ico--menu"></span>
+    <button class="c-btn c-btn--icon c-page-header__toggle js-menu-toggle">
+        <span class="c-ico c-ico--40 c-ico--menu-hamburger"></span>
         <span class="u-hidden-visually">Menu</span>
     </button>
+
     <h1 class="c-page-header__title">KLM app</h1>
+
+    <a href="https://frontmen.github.io/frontmen.nl" class="c-page-header__logo">
+        <img src="https://frontmen.github.io/frontmen.nl/img/fm-monogram-logo.svg" alt="Frontmen">
+    </a>
 </header>
 
     <nav class="c-page-navigation o-layout__navigation">
-    <button class="c-btn c-btn--icon" data-toggle-menu>
-        <span class="c-ico c-ico--30 c-ico--close"></span>
+    <button class="c-btn c-btn--icon c-page-navigation__close js-menu-toggle">
+        <span class="c-ico c-ico--40 c-ico--menu-close"></span>
         <span class="u-hidden-visually">Close menu</span>
     </button>
 
-    <ul class="o-list-bare c-page-navigation__list">
-        <li class="o-list-bare__item">
+    <ul class="c-page-navigation__list">
+        <li class="c-page-navigation__list-item">
             <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/">Home</a>
         </li>
-        <li class="o-list-bare__item">
+        <li class="c-page-navigation__list-item">
             <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/work">Work</a>
+
+            <ul class="c-page-navigation__list">
+                <li class="c-page-navigation__list-item">
+                    <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/work/klm">KLM</a>
+                </li>
+                <li class="c-page-navigation__list-item">
+                    <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/work/toon">Toon</a>
+                </li>
+            </ul>
         </li>
-        <li class="o-list-bare__item">
+        <li class="c-page-navigation__list-item">
             <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/about">About us</a>
         </li>
-        <li class="o-list-bare__item">
+        <li class="c-page-navigation__list-item">
             <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/knowledge">Knowledge</a>
         </li>
-        <li class="o-list-bare__item">
+        <li class="c-page-navigation__list-item">
             <a class="c-page-navigation__link" href="https://frontmen.github.io/frontmen.nl/contact">Contact</a>
         </li>
     </ul>
+
+    <img class="c-page-navigation__logo" src="https://frontmen.github.io/frontmen.nl/img/fm-logo-menu.svg" alt="Frontmen">
 </nav>
 
 
     <main class="o-layout__main c-page-main" role="main">
-        <article>
+        <article class="o-wrapper">
             <h1 id="klm-example-page">KLM example page</h1>
 <p>Paragraphs are separated by a blank line.</p>
 <p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
@@ -181,7 +198,7 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
 
     <footer role="contentinfo" class="c-page-footer o-layout__footer">
     <a href="https://frontmen.github.io/frontmen.nl" class="c-page-footer__logo">
-        <img src="http://placehold.it/75x75" alt="Frontmen">
+        <img src="https://frontmen.github.io/frontmen.nl/img/fm-monogram-logo.svg" alt="Frontmen">
     </a>
 </footer>
 

@@ -556,7 +556,7 @@ dd {
 html {
   font-size: 1em;
   line-height: 1.375;
-  font-family: PT Sans, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   background-color: #fff;
   color: #1f1e32; }
 
@@ -669,7 +669,8 @@ a {
     right: 0;
     left: 0;
     z-index: 1;
-    height: 90px; }
+    height: 90px;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out; }
   .o-layout__navigation {
     position: fixed;
     height: 100vh;
@@ -687,6 +688,9 @@ a {
 .o-layout--open .o-layout__main,
 .o-layout--open .o-layout__footer {
   transform: translateX(400px); }
+
+.o-layout--open .o-layout__header {
+  opacity: .75; }
 
 .c-btn {
   text-align: center;
@@ -724,14 +728,15 @@ a {
   .c-ico--44 {
     width: 44px;
     height: 44px; }
-  .c-ico--menu {
-    background-image: url("https://frontmen.github.io/frontmen.nl/img/icon-menu.svg"); }
-  .c-ico--close {
-    background-image: url("https://frontmen.github.io/frontmen.nl/img/icon-close.svg"); }
+  .c-ico--menu-close {
+    background-image: url("https://frontmen.github.io/frontmen.nl/img/icon-menu-close.svg"); }
+  .c-ico--menu-hamburger {
+    background-image: url("https://frontmen.github.io/frontmen.nl/img/icon-menu-hamburger.svg"); }
 
 .c-page-header {
   background-color: #1f1e32;
   display: flex;
+  align-items: center;
   padding: 6px; }
   @media (min-width: 30em) {
     .c-page-header {
@@ -740,12 +745,24 @@ a {
     .c-page-header {
       padding: 22px; } }
   .c-page-header__title {
-    color: #a5a5ad;
-    margin: 0 0 0 11px;
-    text-transform: uppercase;
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.83333; }
+    line-height: 1.83333;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    text-transform: uppercase;
+    color: #a5a5ad;
+    margin: 0 0 0 11px; }
+  .c-page-header__logo {
+    flex: 0 1;
+    height: 100%; }
+    .c-page-header__logo img {
+      height: 100%;
+      max-height: 100%;
+      width: auto; }
 
 .c-page-navigation {
   display: flex;
@@ -753,7 +770,11 @@ a {
   background-color: #1f1e32;
   padding: 22px; }
   .c-page-navigation__list {
-    margin: 0; }
+    list-style: none;
+    margin: 0 0 0 22px;
+    flex: 1; }
+  .c-page-navigation__list-item {
+    margin-left: 0; }
   .c-page-navigation__link {
     display: block;
     color: #a5a5ad;
@@ -763,17 +784,29 @@ a {
     line-height: 1.83333;
     font-weight: 400;
     text-transform: uppercase; }
+    .c-page-navigation__link:first-child {
+      margin-top: -22px; }
     .c-page-navigation__link:hover, .c-page-navigation__link:focus {
       text-decoration: none;
       color: #e6e6e6; }
+  .c-page-navigation__logo {
+    position: absolute;
+    bottom: 22px;
+    max-width: 60%;
+    height: auto; }
 
 .c-page-footer {
   background-color: #1f1e32;
-  padding: 6px;
+  padding: 11px;
   display: flex;
   justify-content: center; }
   .c-page-footer__logo {
-    font-size: 0; }
+    font-size: 0;
+    height: 60px; }
+    .c-page-footer__logo img {
+      height: 100%;
+      max-height: 100%;
+      width: auto; }
 
 .u-hidden-visually {
   border: 0 !important;
