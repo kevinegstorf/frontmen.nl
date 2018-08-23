@@ -42,6 +42,10 @@
  * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
  **/
+@font-face {
+  font-family: 'Stratum1';
+  src: url("/fonts/Stratum1-Bold.woff") format("woff"), url("/fonts/Stratum1-Bold.otf") format("opentype"); }
+
 /*------------------------------------*\
   #BOX-SIZING
 \*------------------------------------*/
@@ -692,6 +696,23 @@ a {
 .o-layout--open .o-layout__header {
   opacity: .75; }
 
+/*------------------------------------*\
+  #HEADLINE
+\*------------------------------------*/
+.o-headline {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5.5rem;
+  margin-bottom: 1.375rem; }
+  .o-headline:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .o-headline__main, .o-headline__sub {
+    margin-bottom: 60px;
+    max-width: 853px; }
+
 .c-btn {
   text-align: center;
   margin: 0;
@@ -745,6 +766,7 @@ a {
     .c-page-header {
       padding: 22px; } }
   .c-page-header__title {
+    font-family: 'Stratum1', 'sans-serif';
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.83333;
@@ -779,6 +801,7 @@ a {
     display: block;
     color: #a5a5ad;
     padding: 22px 11px;
+    font-family: 'Stratum1', 'sans-serif';
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.83333;
@@ -807,6 +830,22 @@ a {
       height: 100%;
       max-height: 100%;
       width: auto; }
+
+.c-masthead {
+  position: relative;
+  overflow: hidden;
+  height: 720px;
+  margin-bottom: 22px; }
+  @media (min-width: 75em) {
+    .c-masthead {
+      padding-top: 0; } }
+  .c-masthead__text {
+    padding: 22px; }
+  .c-masthead__title {
+    font-weight: 700;
+    font-size: 70px;
+    font-size: 4.375rem;
+    line-height: 1.25714; }
 
 .u-hidden-visually {
   border: 0 !important;
