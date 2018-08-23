@@ -665,7 +665,7 @@ a {
   display: flex;
   min-height: 100%;
   flex-direction: column; }
-  .o-layout__header, .o-layout__main, .o-layout__navigation, .o-layout__footer {
+  .o-layout__main, .o-layout__navigation, .o-layout__footer {
     transition: transform .3s ease-in-out; }
   .o-layout__header {
     position: fixed;
@@ -674,10 +674,11 @@ a {
     left: 0;
     z-index: 1;
     height: 90px;
-    transition: transform .3s ease-in-out, opacity .3s ease-in-out; }
+    transition: opacity .3s ease-in-out; }
   .o-layout__navigation {
     position: fixed;
     height: 100vh;
+    z-index: 2;
     width: 400px;
     transform: translateX(-400px);
     transition: transform .3s ease-in-out; }
@@ -688,7 +689,6 @@ a {
 .o-layout--open .o-layout__navigation {
   transform: translateX(0); }
 
-.o-layout--open .o-layout__header,
 .o-layout--open .o-layout__main,
 .o-layout--open .o-layout__footer {
   transform: translateX(400px); }
