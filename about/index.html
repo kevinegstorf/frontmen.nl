@@ -80,10 +80,16 @@
     <h1>Bringing together passionate software engineers since 2012</h1>
 </div>
 
-<figure>
-    <img src="everyone.jpg"/>
+<picture>
+    <source srcset="everyone.jpg" media="(min-width: 1200px)">
+    <source srcset="everyone@lg.jpg" media="(min-width: 1024px)">
+    <source srcset="everyone@md.jpg" media="(min-width: 720px)">
+    <source srcset="everyone@sm.jpg" media="(min-width: 480px)">
+    <img srcset="everyone@xs.jpg" />
+
     <figcaption>Our Frontend Experts</figcaption>
-</figure>
+</picture>
+
 
 <div class="o-wrapper">
     <p>In 2012 FrontMen was founded to bring together passionate software engineers with the shared believe that
