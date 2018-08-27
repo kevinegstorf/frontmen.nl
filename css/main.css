@@ -745,11 +745,78 @@ a {
     margin-bottom: 60px;
     max-width: 853px; }
 
+.c-badge-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+.c-badge {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#95949d" fill-rule="evenodd" xlink:href="#a"/></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 272.22222px;
+  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 12px; }
+  .c-badge--150 {
+    width: 150px;
+    height: 204.16667px;
+    font-size: 18px;
+    font-size: 0.9rem;
+    line-height: 1.33333; }
+  .c-badge--100 {
+    width: 100px;
+    height: 136.11111px;
+    font-size: 16px;
+    font-size: 0.8rem;
+    line-height: 1.5; }
+  .c-badge__logo {
+    max-width: 70%;
+    width: 70%;
+    height: auto;
+    margin-bottom: 6px; }
+  .c-badge__name {
+    color: #fff;
+    text-transform: uppercase; }
+  .c-badge--project .c-badge__logo {
+    max-width: 100%;
+    width: 100%;
+    margin: 0; }
+  .c-badge--ah {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#201E33" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .c-badge--klm {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#00E6BF" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .c-badge--quby {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#FF5900" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .c-badge--rabobank {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#FF5900" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .c-badge--tele2 {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#00E6BF" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover; }
+
 .c-blockquote {
-  float: right;
-  width: 40%;
-  margin-left: 10%;
   color: #ef642b; }
+  @media (min-width: 64em) {
+    .c-blockquote {
+      float: right;
+      width: 40%;
+      margin-left: 10%; } }
   .c-blockquote__content {
     font-size: 48px;
     font-size: 2.4rem;
@@ -854,6 +921,9 @@ a {
   background-color: #57c9ca;
   margin: 96px 0;
   padding: 96px 0; }
+  .c-medium__header {
+    display: flex;
+    flex-direction: column; }
   .c-medium__title {
     flex: 1 100%;
     color: #fff; }
@@ -938,7 +1008,7 @@ a {
     text-transform: uppercase; }
     .c-page-navigation__link:first-child {
       margin-top: -24px; }
-    .c-page-navigation__link:hover, .c-page-navigation__link:focus {
+    a.c-page-navigation__link:hover, a.c-page-navigation__link:focus {
       text-decoration: none;
       color: #e6e6e6; }
   .c-page-navigation__list .c-page-navigation__list .c-page-navigation__link {
