@@ -585,19 +585,19 @@ h6 {
   font-weight: 400; }
 
 h1 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.22222; }
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 1.03125; }
 
 h2 {
-  font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 1.57143; }
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 1.1; }
 
 h3 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.83333; }
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.375; }
 
 h4 {
   font-size: 20px;
@@ -751,9 +751,9 @@ a {
   margin-left: 10%;
   color: #ef642b; }
   .c-blockquote__content {
-    font-size: 28px;
-    font-size: 1.75rem;
-    line-height: 1.57143; }
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1.375; }
   .c-blockquote__footer {
     position: relative;
     border-top: solid 2px #ef642b;
@@ -893,9 +893,9 @@ a {
       padding: 22px; } }
   .c-page-header__title {
     font-family: 'Stratum1', 'sans-serif';
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.83333;
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.375;
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -931,9 +931,9 @@ a {
     color: #a5a5ad;
     padding: 22px 11px;
     font-family: 'Stratum1', 'sans-serif';
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.83333;
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.375;
     font-weight: 400;
     text-transform: uppercase; }
     .c-page-navigation__link:first-child {
@@ -960,11 +960,16 @@ a {
       max-height: 100%;
       width: auto; }
 
-.c-page-intro__title {
-  font-size: 70px;
-  font-size: 4.375rem;
-  line-height: 1.25714;
+.c-page-intro {
   margin: 88px 0; }
+  .c-page-intro__title {
+    font-size: 64px;
+    font-size: 4rem;
+    line-height: 1.03125; }
+  .c-page-intro__excerpt {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.375; }
 
 .u-hidden-visually {
   border: 0 !important;
@@ -982,19 +987,19 @@ a {
   #HEADINGS
 \*------------------------------------*/
 .u-h1 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.22222; }
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 1.03125; }
 
 .u-h2 {
-  font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 1.57143; }
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 1.1; }
 
 .u-h3 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.83333; }
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.375; }
 
 .u-h4 {
   font-size: 20px;
