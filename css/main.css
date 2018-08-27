@@ -544,7 +544,7 @@ table,
 fieldset,
 figure,
 pre {
-  margin-bottom: 88px; }
+  margin-bottom: 1.5rem; }
 
 ul,
 ol,
@@ -614,6 +614,32 @@ h6 {
   font-size: 1rem;
   line-height: 1.375; }
 
+/* ==========================================================================
+   #IMAGES
+   ========================================================================== */
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+  max-width: 100%;
+  /* [1] */
+  font-style: italic;
+  /* [2] */
+  vertical-align: middle;
+  /* [3] */ }
+
+/**
+   * If a `width` and/or `height` attribute has been explicitly defined, let’s
+   * not make the image fluid.
+   */
+img[width],
+img[height] {
+  max-width: none; }
+
 /*------------------------------------*\
   #LINKS
 \*------------------------------------*/
@@ -630,16 +656,22 @@ a {
 /*------------------------------------*\
   #WRAPPERS
 \*------------------------------------*/
-.o-wrapper {
-  max-width: 1280px;
+.o-wrapper, .o-wrapper-content {
+  position: relative;
   padding-right: 22px;
   padding-left: 22px;
   margin-right: auto;
   margin-left: auto; }
-  .o-wrapper:after {
+  .o-wrapper:after, .o-wrapper-content:after {
     content: "";
     display: table;
     clear: both; }
+
+.o-wrapper {
+  max-width: 1280px; }
+
+.o-wrapper-content {
+  max-width: 1150px; }
 
 /* ==========================================================================
    #LIST-BARE
@@ -713,6 +745,34 @@ a {
     margin-bottom: 60px;
     max-width: 853px; }
 
+.c-blockquote {
+  float: right;
+  width: 40%;
+  margin-left: 10%;
+  color: #ef642b; }
+  .c-blockquote__content {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 1.57143; }
+  .c-blockquote__footer {
+    position: relative;
+    border-top: solid 2px #ef642b;
+    padding-top: 44px; }
+    .c-blockquote__footer:before, .c-blockquote__footer:after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 50%;
+      border-style: solid;
+      border-width: 44px 44px 0 0; }
+    .c-blockquote__footer:before {
+      border-color: #ef642b transparent transparent transparent; }
+    .c-blockquote__footer:after {
+      border-color: #fff transparent transparent transparent;
+      top: -4px;
+      left: calc(50% + 2px);
+      border-width: 41px 41px 0 0; }
+
 .c-btn {
   text-align: center;
   margin: 0;
@@ -722,6 +782,26 @@ a {
     border: none;
     padding: 0;
     font-size: 0; }
+  .c-btn--secondary {
+    padding: 11px 22px;
+    background: #1f1e32;
+    color: #fff;
+    text-transform: uppercase; }
+
+.c-featured {
+  position: relative;
+  display: block;
+  margin-bottom: 22px; }
+  .c-featured__img {
+    width: 100%;
+    height: auto; }
+  .c-featured__caption {
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 6px 11px; }
 
 .c-ico {
   background-position: center center;
@@ -754,6 +834,52 @@ a {
   .c-ico--menu-hamburger {
     background-image: url("https://frontmen.github.io/frontmen.nl/img/icon-menu-hamburger.svg"); }
 
+.c-masthead {
+  position: relative;
+  overflow: hidden;
+  height: 720px;
+  margin-bottom: 22px; }
+  @media (min-width: 75em) {
+    .c-masthead {
+      padding-top: 0; } }
+  .c-masthead__text {
+    padding: 22px; }
+  .c-masthead__title {
+    font-weight: 700;
+    font-size: 70px;
+    font-size: 4.375rem;
+    line-height: 1.25714; }
+
+.c-medium {
+  background-color: #57c9ca;
+  margin: 88px 0;
+  padding: 88px 0; }
+  .c-medium__title {
+    flex: 1 100%;
+    color: #fff; }
+  .c-medium__subtitle {
+    flex: 1 100%;
+    order: -1; }
+  .c-medium__content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch; }
+  .c-medium__img {
+    flex: 1;
+    align-self: flex-start;
+    display: block;
+    width: 40%;
+    margin-right: 44px; }
+  .c-medium__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+  .c-medium__excerpt {
+    flex: 1; }
+  .c-medium__button {
+    flex: 0;
+    align-self: flex-end; }
+
 .c-page-header {
   background-color: #1f1e32;
   display: flex;
@@ -776,15 +902,18 @@ a {
     text-overflow: ellipsis;
     flex: 1;
     text-transform: uppercase;
-    color: #a5a5ad;
-    margin: 0 0 0 11px; }
+    color: #e6e6e6;
+    margin: 0 0 0 22px; }
+    .c-page-header__title-sub {
+      color: #a5a5ad; }
   .c-page-header__logo {
     flex: 0 1;
     height: 100%; }
     .c-page-header__logo img {
       height: 100%;
       max-height: 100%;
-      width: auto; }
+      width: auto;
+      max-width: none; }
 
 .c-page-navigation {
   display: flex;
@@ -831,21 +960,11 @@ a {
       max-height: 100%;
       width: auto; }
 
-.c-masthead {
-  position: relative;
-  overflow: hidden;
-  height: 720px;
-  margin-bottom: 22px; }
-  @media (min-width: 75em) {
-    .c-masthead {
-      padding-top: 0; } }
-  .c-masthead__text {
-    padding: 22px; }
-  .c-masthead__title {
-    font-weight: 700;
-    font-size: 70px;
-    font-size: 4.375rem;
-    line-height: 1.25714; }
+.c-page-intro__title {
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 1.25714;
+  margin: 88px 0; }
 
 .u-hidden-visually {
   border: 0 !important;

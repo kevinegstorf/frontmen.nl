@@ -30,7 +30,13 @@
         <span class="u-hidden-visually">Menu</span>
     </button>
 
-    <h1 class="c-page-header__title">About us</h1>
+
+    <h1 class="c-page-header__title">
+        
+        <span class="c-page-header__title-sub"></span>
+        
+        About us
+    </h1>
 
     <a href="https://frontmen.github.io/frontmen.nl" class="c-page-header__logo">
         <img src="https://frontmen.github.io/frontmen.nl/img/fm-monogram-logo.svg" alt="Frontmen">
@@ -76,22 +82,28 @@
 
 
     <main class="o-layout__main c-page-main" role="main">
-        <div class="o-wrapper">
-    <h1>Bringing together passionate software engineers since 2012</h1>
+        <div class="o-wrapper c-page-intro">
+    <h1 class="c-page-intro__title">Bringing together passionate software engineers since 2012</h1>
 </div>
 
-<picture>
-    <source srcset="everyone.jpg" media="(min-width: 1200px)">
-    <source srcset="everyone@lg.jpg" media="(min-width: 1024px)">
-    <source srcset="everyone@md.jpg" media="(min-width: 720px)">
-    <source srcset="everyone@sm.jpg" media="(min-width: 480px)">
-    <img srcset="everyone@xs.jpg" />
+<figure class="c-featured">
+    <picture>
+        <source srcset="everyone.jpg" media="(min-width: 1200px)">
+        <source srcset="everyone@lg.jpg" media="(min-width: 1024px)">
+        <source srcset="everyone@md.jpg" media="(min-width: 720px)">
+        <source srcset="everyone@sm.jpg" media="(min-width: 480px)">
+        <img class="c-featured__img" srcset="everyone@xs.jpg" alt="Our Frontend Experts" />
+    </picture>
 
-    <figcaption>Our Frontend Experts</figcaption>
-</picture>
+    
+    <div class="o-wrapper">
+        <figcaption class="c-featured__caption">Our Frontend Experts</figcaption>
+    </div>
+    
+</figure>
 
 
-<div class="o-wrapper">
+<div class="o-wrapper-content">
     <p>In 2012 FrontMen was founded to bring together passionate software engineers with the shared believe that
         JavaScript would become the dominant development language powering the frontend of applications and only
         organizations using this new wave of technologies best were in favour to succeed.</p>
@@ -99,6 +111,17 @@
         building apps and implementing a modern stack for early adopting clients. Today, we set standards and realize
         application environments that secure our clients can deliver-fast, meet new requirements and answer the
         increasing expectations of their users every day.</p>
+
+    <blockquote class="c-blockquote">
+    <p class="c-blockquote__content">Our teams are more inspired and better performing then ever.</p>
+    <footer class="c-blockquote__footer">
+        <cite>
+            <strong>Andreas Tabak</strong><br />
+            Scotch &amp; Tobacco
+        </cite>
+    </footer>
+</blockquote>
+
 
     <h2>How we work</h2>
 
@@ -113,20 +136,30 @@
         eros sit amet leo molestie porttitor. Etiam dolor ex, finibus quis enim et, ullamcorper suscipit lorem.</p>
 </div>
 
-<aside>
-    <h1>Art of debugging with Chrome DevTools</h1>
-    <h2>Frontmen on Medium</h2>
-    <img src="https://cdn-images-1.medium.com/max/2000/1*K2Utn78MaVzlUeIagOEZRg.png" alt="Art of debugging with Chrome DevTools">
-    <p>Chrome DevTools come with an array of features that help developers debug their apps effectively, and therefore find and fix the bugs faster. There are a lot of power tools in devtools which are not quite well-known amongst the developers.</p>
-    <a href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4" target="_blank">Read the full article</a>
+<aside class="c-medium">
+    <div class="o-wrapper-content">
+        <h1 class="c-medium__title">Art of debugging with Chrome DevTools</h1>
+        <h2 class="c-medium__subtitle">Frontmen on Medium</h2>
+    </div>
+
+    <div class="o-wrapper c-medium__content">
+        <a class="c-medium__img" href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4" target="_blank">
+            <img src="https://cdn-images-1.medium.com/max/2000/1*K2Utn78MaVzlUeIagOEZRg.png" alt="Art of debugging with Chrome DevTools">
+        </a>
+        <div class="c-medium__body">
+          <p class="c-medium__excerpt">Chrome DevTools come with an array of features that help developers debug their apps effectively, and therefore find and fix the bugs faster. There are a lot of power tools in devtools which are not quite well-known amongst the developers.</p>
+          <a class="c-medium__button c-btn c-btn--secondary" href="https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4" target="_blank">Read the full article</a>
+        </div>
+    </div>
 </aside>
 
 
-<div class="o-wrapper">
+<div class="o-wrapper-content">
     <h3>Frontend Component Library</h3>
     <figure>
         <img src="http://placehold.it/900x300?text=Picture+David"/>
     </figure>
+
     <p>Proin et vehicula lectus, vel semper est. Proin pulvinar sit amet risus ac sodales. Mauris eget accumsan velit,
         quis maximus leo. Cras a tincidunt risus, iaculis congue nunc. Ut molestie posuere elementum. Suspendisse non
         eros sit amet leo molestie porttitor. Etiam dolor ex, finibus quis enim et, ullamcorper suscipit lorem.</p>
