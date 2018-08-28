@@ -697,7 +697,7 @@ a {
   display: flex;
   min-height: 100%;
   flex-direction: column; }
-  .o-layout__main, .o-layout__navigation, .o-layout__footer {
+  .o-layout__header, .o-layout__main, .o-layout__navigation, .o-layout__footer {
     transition: transform .3s ease-in-out; }
   .o-layout__header {
     position: fixed;
@@ -706,13 +706,12 @@ a {
     left: 0;
     z-index: 1;
     height: 90px;
-    transition: opacity .3s ease-in-out; }
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out; }
   .o-layout__navigation {
     position: fixed;
     height: 100vh;
-    z-index: 2;
-    width: 400px;
-    transform: translateX(-400px);
+    width: 300px;
+    transform: translateX(-300px);
     transition: transform .3s ease-in-out; }
   .o-layout__main {
     flex: 1;
@@ -721,9 +720,10 @@ a {
 .o-layout--open .o-layout__navigation {
   transform: translateX(0); }
 
+.o-layout--open .o-layout__header,
 .o-layout--open .o-layout__main,
 .o-layout--open .o-layout__footer {
-  transform: translateX(400px); }
+  transform: translateX(300px); }
 
 .o-layout--open .o-layout__header {
   opacity: .75; }
@@ -849,6 +849,8 @@ a {
     border: none;
     padding: 0;
     font-size: 0; }
+    .c-btn--icon:hover, .c-btn--icon:focus {
+      outline: none; }
   .c-btn--secondary {
     padding: 12px 24px;
     background: #1f1e32;
@@ -858,7 +860,7 @@ a {
 .c-featured {
   position: relative;
   display: block;
-  margin-bottom: 24px; }
+  margin-bottom: 96px; }
   .c-featured__img {
     width: 100%;
     height: auto; }
@@ -987,12 +989,13 @@ a {
 
 .c-page-navigation {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   background-color: #1f1e32;
-  padding: 24px; }
+  padding: 24px;
+  overflow: scroll; }
   .c-page-navigation__list {
     list-style: none;
-    margin: 0 0 0 24px;
+    margin: 0;
     flex: 1; }
   .c-page-navigation__list-item {
     margin-left: 0; }
@@ -1015,9 +1018,11 @@ a {
     font-size: 20px;
     font-size: 1rem;
     line-height: 1.2; }
+    .c-page-navigation__list .c-page-navigation__list .c-page-navigation__link:before {
+      content: '- '; }
+  .c-page-navigation__list .c-page-navigation__list {
+    list-style: disc; }
   .c-page-navigation__logo {
-    position: absolute;
-    bottom: 24px;
     max-width: 60%;
     height: auto; }
 
