@@ -615,8 +615,8 @@ a {
 \*------------------------------------*/
 .o-wrapper, .o-wrapper-content {
   position: relative;
-  padding-right: 27px;
-  padding-left: 27px;
+  padding-right: 14px;
+  padding-left: 14px;
   margin-right: auto;
   margin-left: auto; }
   .o-wrapper:after, .o-wrapper-content:after {
@@ -626,9 +626,17 @@ a {
 
 .o-wrapper {
   max-width: 1280px; }
+  @media (min-width: 45em) {
+    .o-wrapper {
+      padding-right: 27px;
+      padding-left: 27px; } }
 
 .o-wrapper-content {
   max-width: 1150px; }
+  @media (min-width: 45em) {
+    .o-wrapper-content {
+      padding-right: 54px;
+      padding-left: 54px; } }
 
 /* ==========================================================================
    #LIST-BARE
@@ -807,7 +815,8 @@ a {
     background-size: cover; }
 
 .c-blockquote {
-  color: #ef642b; }
+  color: #ef642b;
+  padding-top: 1.5rem; }
   .c-blockquote__content {
     font-size: 40px;
     font-size: 2.22222rem;
@@ -979,6 +988,8 @@ a {
     display: block; }
     .c-news__link:hover, .c-news__link:focus {
       outline: none; }
+  .c-news__image {
+    object-fit: cover; }
   .c-news__title {
     position: absolute;
     width: 100%;
