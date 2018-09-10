@@ -632,7 +632,7 @@ a {
       padding-left: 27px; } }
 
 .o-wrapper-content {
-  max-width: 1150px; }
+  max-width: 960px; }
   @media (min-width: 45em) {
     .o-wrapper-content {
       padding-right: 54px;
@@ -651,9 +651,14 @@ a {
 .o-list-bare {
   list-style: none;
   margin-left: 0; }
-
-.o-list-bare__item {
-  margin-left: 0; }
+  .o-list-bare__item {
+    margin-left: 0; }
+    .o-list-bare__item--secondary-bullet {
+      background-image: url(https://frontmen.github.io/frontmen.nl/img/asterisk.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 16px;
+      padding-left: 27px; }
 
 /*------------------------------------*\
   #LIST-INLINE
@@ -729,9 +734,8 @@ a {
   max-width: 20rem;
   min-width: 12rem;
   padding: 0 1.5rem 1.5rem 0; }
-  .o-media__img {
-    width: 64px;
-    margin: 0 2.22222rem 0 0; }
+  .o-media__badge {
+    margin: 0 1.5rem 0 0; }
   .o-media__content {
     flex: 1; }
     .o-media__content > p {
@@ -781,6 +785,14 @@ a {
     font-size: 16px;
     font-size: 0.88889rem;
     line-height: 1.6875; }
+  .c-badge--64 {
+    width: 64px;
+    height: 87.11111px;
+    font-size: 12px;
+    font-size: 0.66667rem;
+    line-height: 2.25; }
+  .c-badge--no-spacing {
+    margin: 0; }
   .c-badge__logo {
     max-width: 70%;
     width: 70%;
@@ -793,24 +805,30 @@ a {
     max-width: 100%;
     width: 100%;
     margin: 0; }
+  .c-badge--social .c-badge__logo {
+    margin-bottom: 0; }
   .c-badge--ah {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#201E33" fill-rule="evenodd" xlink:href="#a"/></svg>');
     background-repeat: no-repeat;
     background-size: cover; }
   .c-badge--klm {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#00E6BF" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#57c9ca" fill-rule="evenodd" xlink:href="#a"/></svg>');
     background-repeat: no-repeat;
     background-size: cover; }
   .c-badge--quby {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#FF5900" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#ef642b" fill-rule="evenodd" xlink:href="#a"/></svg>');
     background-repeat: no-repeat;
     background-size: cover; }
   .c-badge--rabobank {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#FF5900" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#ef642b" fill-rule="evenodd" xlink:href="#a"/></svg>');
     background-repeat: no-repeat;
     background-size: cover; }
   .c-badge--tele2 {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#00E6BF" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#57c9ca" fill-rule="evenodd" xlink:href="#a"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .c-badge--social {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#57c9ca" fill-rule="evenodd" xlink:href="#a"/></svg>');
     background-repeat: no-repeat;
     background-size: cover; }
 
@@ -1115,6 +1133,10 @@ a {
     font-size: 20px;
     font-size: 1.11111rem;
     line-height: 1.35; }
+  .c-page-footer__list li {
+    margin-bottom: 14px; }
+  .c-page-footer__list a {
+    font-weight: 400; }
   .c-page-footer__logo {
     font-size: 0;
     height: 60px;
