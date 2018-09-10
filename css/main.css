@@ -791,8 +791,6 @@ a {
     font-size: 12px;
     font-size: 0.66667rem;
     line-height: 2.25; }
-  .c-badge--no-spacing {
-    margin: 0; }
   .c-badge__logo {
     max-width: 70%;
     width: 70%;
@@ -874,6 +872,32 @@ a {
     background: #1f1e32;
     color: #fff;
     text-transform: uppercase; }
+
+.c-contact-section {
+  background: #e6e6e6;
+  padding: 54px 0; }
+  .c-contact-section__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .c-contact-section__title {
+    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 27px;
+    text-transform: uppercase; }
+  .c-contact-section__author {
+    font-style: normal; }
+    .c-contact-section__author > * {
+      display: block; }
+    .c-contact-section__author em {
+      font-style: normal; }
+  .c-contact-section__avatar {
+    border-radius: 50%;
+    order: -1;
+    margin-right: 27px; }
 
 .c-featured {
   position: relative;
