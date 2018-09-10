@@ -753,6 +753,15 @@ a {
       flex: 1;
       flex-basis: 50%; } }
 
+.c-address__name {
+  font-size: 20px;
+  font-size: 1.11111rem;
+  line-height: 1.35;
+  color: #ef642b; }
+
+.c-address__street, .c-address__region, .c-address__phone, .c-address__mail {
+  display: block; }
+
 .c-badge-bar {
   display: flex;
   flex-flow: row wrap;
@@ -1231,6 +1240,24 @@ a {
   font-size: 16px;
   font-size: 0.88889rem;
   line-height: 1.6875; }
+
+/*------------------------------------*\
+  #SPACINGS
+\*------------------------------------*/
+.u-mb-tiny {
+  margin-bottom: 7px; }
+
+.u-mb-small {
+  margin-bottom: 14px; }
+
+.u-mb-normal {
+  margin-bottom: 27px; }
+
+.u-mb-large {
+  margin-bottom: 54px; }
+
+.u-mb-huge {
+  margin-bottom: 108px; }
 
 /*------------------------------------*\
   #WIDTHS
