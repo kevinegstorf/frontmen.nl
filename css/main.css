@@ -769,24 +769,39 @@ a {
     display: block; }
 
 .c-badge-bar {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-around;
+  margin-bottom: -10%; }
 
 .c-badge {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#95949d" fill-rule="evenodd" xlink:href="#a"/></svg>');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 200px;
-  height: 272.22222px;
-  font-size: 28px;
-  font-size: 1.4rem;
-  line-height: 1.07143;
+  width: 100px;
+  height: 136.11111px;
+  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media (min-width: 30em) {
+    .c-badge {
+      width: 150px;
+      height: 204.16667px;
+      font-size: 24px;
+      font-size: 1.2rem;
+      line-height: 1.25; } }
+  @media (min-width: 45em) {
+    .c-badge {
+      width: 200px;
+      height: 272.22222px;
+      font-size: 28px;
+      font-size: 1.4rem;
+      line-height: 1.07143; } }
   .c-badge--150 {
     width: 150px;
     height: 204.16667px;
@@ -999,7 +1014,7 @@ a {
 
 .c-more-info-section {
   background: #e6e6e6;
-  padding: 60px 0; }
+  padding: 180px 0 60px 0; }
   .c-more-info-section__content {
     display: flex;
     flex-direction: row;
