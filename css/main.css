@@ -789,7 +789,8 @@ a {
 .c-address__grid {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .c-address {
   flex: 1;
