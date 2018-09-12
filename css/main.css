@@ -751,20 +751,12 @@ a {
   .c-address__street, .c-address__region, .c-address__phone, .c-address__mail {
     display: block; }
 
-.c-badge-bar {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin-bottom: -10%;
-  margin-top: 60px; }
-
 .c-badge {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#95949d" fill-rule="evenodd" xlink:href="#a"/></svg>');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100px;
-  height: 136.11111px;
+  width: 200px;
+  height: 272.22222px;
   font-size: 20px;
   font-size: 1rem;
   line-height: 1.5;
@@ -772,20 +764,6 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  @media (min-width: 30em) {
-    .c-badge {
-      width: 150px;
-      height: 204.16667px;
-      font-size: 24px;
-      font-size: 1.2rem;
-      line-height: 1.25; } }
-  @media (min-width: 45em) {
-    .c-badge {
-      width: 200px;
-      height: 272.22222px;
-      font-size: 28px;
-      font-size: 1.4rem;
-      line-height: 1.07143; } }
   .c-badge--150 {
     width: 150px;
     height: 204.16667px;
@@ -850,6 +828,37 @@ a {
       max-width: 70%; }
   .c-badge--frontmania {
     background: none; }
+
+.c-badge-bar {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: -50px;
+  margin-top: 60px; }
+  @media (min-width: 30em) {
+    .c-badge-bar {
+      margin-bottom: -75px; } }
+  @media (min-width: 45em) {
+    .c-badge-bar {
+      margin-bottom: -100px; } }
+  .c-badge-bar .c-badge {
+    width: 100px;
+    height: 136.11111px; }
+    @media (min-width: 30em) {
+      .c-badge-bar .c-badge {
+        width: 150px;
+        height: 204.16667px;
+        font-size: 24px;
+        font-size: 1.2rem;
+        line-height: 1.25; } }
+    @media (min-width: 45em) {
+      .c-badge-bar .c-badge {
+        width: 200px;
+        height: 272.22222px;
+        font-size: 28px;
+        font-size: 1.4rem;
+        line-height: 1.07143; } }
 
 .c-blockquote {
   color: #ef642b;
@@ -949,8 +958,16 @@ a {
 
 .c-masthead {
   position: relative;
-  margin-bottom: 360px;
-  padding-top: 180px; }
+  padding-top: 30px; }
+  @media (min-width: 30em) {
+    .c-masthead {
+      padding-top: 60px; } }
+  @media (min-width: 45em) {
+    .c-masthead {
+      padding-top: 90px; } }
+  @media (min-width: 64em) {
+    .c-masthead {
+      padding-top: 180px; } }
   .c-masthead:before, .c-masthead:after {
     content: '';
     background-repeat: no-repeat;
@@ -959,56 +976,141 @@ a {
     position: absolute;
     z-index: -1; }
   .c-masthead:before {
-    width: 50%;
-    height: 200vh;
-    top: -200px;
+    width: 60%;
+    height: 300vh;
+    top: 0;
     left: 0;
     background-image: url("https://frontmen.github.io/frontmen.nl/img/shape-1.svg"); }
+    @media (min-width: 45em) {
+      .c-masthead:before {
+        width: 55%;
+        top: -100px; } }
+    @media (min-width: 64em) {
+      .c-masthead:before {
+        width: 50%;
+        top: -200px; } }
   .c-masthead:after {
-    width: 30%;
+    width: 75%;
     height: 200vh;
-    top: 40%;
+    top: 65%;
     right: 0;
     background-image: url("https://frontmen.github.io/frontmen.nl/img/shape-2.svg"); }
+    @media (min-width: 45em) {
+      .c-masthead:after {
+        width: 40%;
+        top: 50%; } }
+    @media (min-width: 64em) {
+      .c-masthead:after {
+        width: 30%;
+        top: 40%; } }
   .c-masthead__title {
-    font-size: 78px;
-    font-size: 3.9rem;
+    font-size: 40px;
+    font-size: 2rem;
     line-height: 1.5;
     font-weight: 700; }
+    @media (min-width: 45em) {
+      .c-masthead__title {
+        font-size: 52px;
+        font-size: 2.6rem;
+        line-height: 1.15385; } }
+    @media (min-width: 64em) {
+      .c-masthead__title {
+        font-size: 78px;
+        font-size: 3.9rem;
+        line-height: 1.15385; } }
     .c-masthead__title-sub {
-      font-size: 40px;
-      font-size: 2rem;
-      line-height: 1.5;
+      font-size: 28px;
+      font-size: 1.4rem;
+      line-height: 1.07143;
       font-weight: 400;
       color: #ef642b;
       text-transform: uppercase;
-      display: inline; }
+      display: block;
+      margin-top: 15px; }
+      @media (min-width: 45em) {
+        .c-masthead__title-sub {
+          font-size: 32px;
+          font-size: 1.6rem;
+          line-height: 1.875; } }
+      @media (min-width: 64em) {
+        .c-masthead__title-sub {
+          font-size: 40px;
+          font-size: 2rem;
+          line-height: 1.5; } }
+      @media (min-width: 64em) {
+        .c-masthead__title-sub {
+          display: inline;
+          margin-top: 0; } }
   .c-masthead__badges {
     position: relative;
     margin-top: 90px;
     margin-bottom: 90px;
-    height: 360px; }
+    height: 1250px; }
+    @media (min-width: 45em) {
+      .c-masthead__badges {
+        height: 750px; } }
+    @media (min-width: 64em) {
+      .c-masthead__badges {
+        height: 600px; } }
     .c-masthead__badges .c-badge {
       position: absolute; }
     .c-masthead__badges .c-badge:nth-child(1) {
-      left: 0;
+      left: 10%;
       top: 0;
       transform: scale(1.2); }
+      @media (min-width: 45em) {
+        .c-masthead__badges .c-badge:nth-child(1) {
+          left: 5%; } }
+      @media (min-width: 64em) {
+        .c-masthead__badges .c-badge:nth-child(1) {
+          left: 0; } }
     .c-masthead__badges .c-badge:nth-child(2) {
-      left: 45%;
-      top: 0;
+      left: -50px;
+      top: 30%;
       transform: scale(1.2); }
+      @media (min-width: 45em) {
+        .c-masthead__badges .c-badge:nth-child(2) {
+          left: 45%;
+          top: -5%; } }
+      @media (min-width: 64em) {
+        .c-masthead__badges .c-badge:nth-child(2) {
+          left: 45%;
+          top: 0; } }
     .c-masthead__badges .c-badge:nth-child(3) {
-      left: 25%;
-      top: 60%;
+      left: 65%;
+      top: 35%;
       transform: scale(1.5); }
+      @media (min-width: 45em) {
+        .c-masthead__badges .c-badge:nth-child(3) {
+          left: 75%;
+          top: 25%; } }
+      @media (min-width: 64em) {
+        .c-masthead__badges .c-badge:nth-child(3) {
+          left: 25%;
+          top: 45%; } }
     .c-masthead__badges .c-badge:nth-child(4) {
-      right: 0;
+      right: calc(50% - 100px);
+      top: 65%;
       transform: scale(1.75); }
+      @media (min-width: 64em) {
+        .c-masthead__badges .c-badge:nth-child(4) {
+          right: 0;
+          top: auto; } }
     .c-masthead__badges .c-badge:nth-child(5) {
-      top: -130%;
+      top: -10%;
       right: -10%;
       transform: scale(1.2); }
+      @media (min-width: 45em) {
+        .c-masthead__badges .c-badge:nth-child(5) {
+          top: -40%; } }
+      @media (min-width: 64em) {
+        .c-masthead__badges .c-badge:nth-child(5) {
+          top: -75%;
+          right: 0; } }
+      @media (min-width: 75em) {
+        .c-masthead__badges .c-badge:nth-child(5) {
+          top: -90%;
+          right: -20%; } }
 
 .c-medium {
   background-color: #57c9ca;
