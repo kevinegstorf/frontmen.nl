@@ -605,7 +605,6 @@ img[height] {
  */
 a {
   color: inherit;
-  font-weight: 700;
   text-decoration: none; }
   a:hover, a:focus {
     text-decoration: underline; }
@@ -903,15 +902,18 @@ a {
     margin-bottom: 30px;
     text-transform: uppercase; }
   .c-contact-section__author {
+    font-size: 20px;
+    font-size: 1rem;
+    line-height: 2;
     font-style: normal; }
     .c-contact-section__author > * {
       display: block; }
     .c-contact-section__author em {
       font-style: normal; }
   .c-contact-section__avatar {
-    border-radius: 50%;
     order: -1;
-    margin-right: 30px; }
+    margin-right: 60px;
+    width: 200px; }
 
 .c-featured {
   position: relative;
