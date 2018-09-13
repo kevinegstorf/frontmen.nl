@@ -1361,7 +1361,7 @@ a {
   flex-direction: column;
   background-color: #1f1e32;
   padding: 30px;
-  overflow: scroll; }
+  overflow: auto; }
   .c-page-navigation__list {
     list-style: none;
     margin: 0;
