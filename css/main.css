@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Stratum1';
-  src: url("https://www.frontmen.nl/fonts/Stratum1-Bold.woff") format("woff"), url("https://www.frontmen.nl/fonts/Stratum1-Bold.otf") format("opentype"); }
+  src: url("/fonts/Stratum1-Bold.woff") format("woff"), url("/fonts/Stratum1-Bold.otf") format("opentype"); }
 
 /*------------------------------------*\
   #BOX-SIZING
@@ -703,7 +703,7 @@ a {
   .o-list-bare__item {
     margin-left: 0; }
     .o-list-bare__item--secondary-bullet {
-      background-image: url(https://www.frontmen.nl/img/menu-icon.png);
+      background-image: url(/img/menu-icon.png);
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 16px;
@@ -972,36 +972,36 @@ a {
     color: #fff;
     padding: 8px 15px; }
 
-.c-ico {
+.c-icon {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block; }
-  .c-ico--16 {
+  .c-icon--16 {
     width: 16px;
     height: 16px; }
-  .c-ico--20 {
+  .c-icon--20 {
     width: 20px;
     height: 20px; }
-  .c-ico--24 {
+  .c-icon--24 {
     width: 24px;
     height: 24px; }
-  .c-ico--30 {
+  .c-icon--30 {
     width: 30px;
     height: 30px; }
-  .c-ico--34 {
+  .c-icon--34 {
     width: 34px;
     height: 34px; }
-  .c-ico--40 {
+  .c-icon--40 {
     width: 40px;
     height: 40px; }
-  .c-ico--44 {
+  .c-icon--44 {
     width: 44px;
     height: 44px; }
-  .c-ico--menu-close {
-    background-image: url("https://www.frontmen.nl/img/icon-menu-close.svg"); }
-  .c-ico--menu-hamburger {
-    background-image: url("https://www.frontmen.nl/img/icon-menu-hamburger.svg"); }
+  .c-icon--menu-close {
+    background-image: url("/img/icon-menu-close.svg"); }
+  .c-icon--menu-hamburger {
+    background-image: url("/img/icon-menu-hamburger.svg"); }
 
 .c-image {
   margin: 0 0 90px 0; }
@@ -1034,7 +1034,7 @@ a {
     height: 300vh;
     top: 0;
     left: 0;
-    background-image: url("https://www.frontmen.nl/img/shape-1.svg"); }
+    background-image: url("/img/shape-1.svg"); }
     @media (min-width: 45em) {
       .c-masthead:before {
         width: 55%;
@@ -1048,7 +1048,7 @@ a {
     height: 200vh;
     top: 65%;
     right: 0;
-    background-image: url("https://www.frontmen.nl/img/shape-2.svg"); }
+    background-image: url("/img/shape-2.svg"); }
     @media (min-width: 45em) {
       .c-masthead:after {
         width: 40%;
