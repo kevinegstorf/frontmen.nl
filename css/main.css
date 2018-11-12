@@ -1366,7 +1366,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #1f1e32;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
   overflow: auto; }
   .c-page-navigation__list {
     list-style: none;
@@ -1377,15 +1377,13 @@ a {
   .c-page-navigation__link {
     display: block;
     color: #a5a5ad;
-    padding: 30px 15px;
+    padding: 15px 15px;
     font-family: 'Stratum1', 'sans-serif';
     font-size: 32px;
     font-size: 1.6rem;
     line-height: 1.875;
     font-weight: 400;
     text-transform: uppercase; }
-    .c-page-navigation__link:first-child {
-      margin-top: -30px; }
     a.c-page-navigation__link:hover, a.c-page-navigation__link:focus {
       text-decoration: none;
       color: #e6e6e6; }
